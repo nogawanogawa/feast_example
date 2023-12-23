@@ -5,7 +5,7 @@ Workdir /usr/src/app
 
 RUN apt update
 RUN apt install -y cmake
-ENV POETRY_HOME="/opt/poetry" 
+ENV POETRY_HOME="/opt/poetry"
 ENV PATH="$POETRY_HOME/bin::$PATH"
 
 COPY poetry.lock pyproject.toml ./
